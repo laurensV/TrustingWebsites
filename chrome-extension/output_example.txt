@@ -1,0 +1,198 @@
+
+ Array
+(
+    [hosts] => Array
+        (
+            [0] => Array
+                (
+                    [name] => 1
+                    [ip] => 74.125.136.94
+                    [address] => Mountain View, CA, USA
+                    [coord] => Array
+                        (
+                            [latitude] => 37.3860517
+                            [longitude] => -122.0838511
+                        )
+
+                    [radius] => 4.34517117039
+                )
+
+        )
+
+    [mservers] => Array
+        (
+            [0] => Array
+                (
+                    [name] => 1
+                    [ip] => 74.125.25.27
+                    [address] => Mountain View, CA, USA
+                    [coord] => Array
+                        (
+                            [latitude] => 37.3860517
+                            [longitude] => -122.0838511
+                        )
+
+                    [radius] => 4.34517117039
+                )
+
+            [1] => Array
+                (
+                    [name] => 1
+                    [ip] => 74.125.196.27
+                    [address] => Mountain View, CA, USA
+                    [coord] => Array
+                        (
+                            [latitude] => 37.3860517
+                            [longitude] => -122.0838511
+                        )
+
+                    [radius] => 4.34517117039
+                )
+
+            [2] => Array
+                (
+                    [name] => 1
+                    [ip] => 74.125.193.26
+                    [address] => Mountain View, CA, USA
+                    [coord] => Array
+                        (
+                            [latitude] => 37.3860517
+                            [longitude] => -122.0838511
+                        )
+
+                    [radius] => 4.34517117039
+                )
+
+            [3] => Array
+                (
+                    [name] => 1
+                    [ip] => 173.194.65.27
+                    [address] => Mountain View, CA, USA
+                    [coord] => Array
+                        (
+                            [latitude] => 37.3860517
+                            [longitude] => -122.0838511
+                        )
+
+                    [radius] => 4.34517117039
+                )
+
+            [4] => Array
+                (
+                    [name] => 1
+                    [ip] => 173.194.64.26
+                    [address] => Mountain View, CA, USA
+                    [coord] => Array
+                        (
+                            [latitude] => 37.3860517
+                            [longitude] => -122.0838511
+                        )
+
+                    [radius] => 4.34517117039
+                )
+
+        )
+
+    [domain] => Array
+        (
+            [registrant] => Array
+                (
+                    [name] => 
+                    [address] => 
+                    [coord] => 
+                    [radius] => 0
+                )
+
+            [registrar] => Array
+                (
+                    [name] => MarkMonitor Inc.
+                    [address] => 391 North Ancestor Place, Boise, ID 83704, USA
+                    [coord] => Array
+                        (
+                            [latitude] => 43.608537
+                            [longitude] => -116.30795
+                        )
+
+                    [radius] => 0.13081475452
+                )
+
+            [tld] => Array
+                (
+                    [name] => nl
+                    [address] => The Netherlands
+                    [coord] => Array
+                        (
+                            [latitude] => 52.132633
+                            [longitude] => 5.291266
+                        )
+
+                    [radius] => 0.13081475452
+                )
+
+        )
+
+    [cas] => Array
+        (
+            [0] => Array
+                (
+                    [coord] => Array
+                        (
+                            [latitude] => 37.09024
+                            [longitude] => -95.712891
+                        )
+
+                    [address] => United States
+                    [name] => Google Inc
+                    [radius] => 1955.39420182
+                )
+
+            [1] => Array
+                (
+                    [coord] => Array
+                        (
+                            [latitude] => 37.09024
+                            [longitude] => -95.712891
+                        )
+
+                    [address] => United States
+                    [name] => GeoTrust Inc.
+                    [radius] => 1955.39420182
+                )
+
+            [2] => Array
+                (
+                    [coord] => Array
+                        (
+                            [latitude] => 37.09024
+                            [longitude] => -95.712891
+                        )
+
+                    [address] => United States
+                    [name] => Equifax
+                    [radius] => 1955.39420182
+                )
+
+        )
+
+    [name] => https://google.nl
+    [user] => Array
+        (
+            [name] => 
+            [ip] => 213.124.215.114
+            [address] => Amsterdam, The Netherlands
+            [coord] => Array
+                (
+                    [latitude] => 52.3702157
+                    [longitude] => 4.8951679
+                )
+
+            [radius] => 9.27370543526
+        )
+
+    [midpoint] => Array
+        (
+            [latitude] => 37.9441955194
+            [longitude] => -113.340451022
+        )
+
+)

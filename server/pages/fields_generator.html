@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+                table,th,td
+                {
+                padding:5px;
+                border:1px solid black;
+                border-collapse:collapse;
+                }
+        </style>
+    </head>
+    <body>
+        <form action="javascript:return false;" method="get" name="fields">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>name</th>
+                        <th><a href="#" onclick="tickFields()" title="tick/untick all fields"> X </a></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>user</label>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="checkbox" checked="checked" onclick="changeFields()" name="user" value="1">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label>first host</label>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="checkbox" checked="checked" onclick="changeFields()" name="firsthost" value="2">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label>multiple hosts (if available)</label>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="checkbox" checked="checked" onclick="changeFields()" name="allhosts" value="4">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label>owner of first host</label>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="checkbox" checked="checked" onclick="changeFields()" name="hostowner" value="8">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label>mail servers</label>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="checkbox" checked="checked" onclick="changeFields()" name="mailservers" value="16">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label>domain registrant/registrar</label>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="checkbox" checked="checked" onclick="changeFields()" name="domain" value="32">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label>top level domain</label>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="checkbox" checked="checked" onclick="changeFields()" name="tld" value="64">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label>first ca</label>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="checkbox" checked="checked" onclick="changeFields()" name="firstca" value="128">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label>ca chain</label>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="checkbox" checked="checked" onclick="changeFields()" name="cachain" value="256">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label>midpoint</label>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="checkbox" checked="checked" onclick="changeFields()" name="midpoint" value="512">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <div>
+                <b>Fields code</b>
+                <pre><span id="generatedNumeric">1023</span></pre>
+                <b>Example:  </b>
+                <code>
+                <a href="http://iavconcepts.com/test?url=https://google.com&fields=1023" title="fields example" rel="nofollow" >http://iavconcepts.com/test?url=https://google.com&fields=1023</a>
+                </code>
+            </div>
+        </form>
+        <noscript>&lt;b&gt;JavaScript must be turned on to use this feature&lt;/b&gt;</noscript>
+        <script type="text/javascript">
+                        lastAction = true;
+                        function tickFields() {
+                            fields = document.fields.elements;
+                            lastAction = !(lastAction);
+                            for (i = 0; i < fields.length; i++) {
+                                fields[i].checked = lastAction;
+                            }
+                            changeFields();
+                        }
+                        function changeFields() {
+                            numeric = 0;
+                            fields = document.fields.elements;
+                            for (i = 0; i < fields.length; i++) {
+                                if(fields[i].checked == true) {
+                                    numeric += parseInt(fields[i].value);
+                                }
+                            }
+                                document.getElementById('generatedNumeric').innerHTML = numeric;
+                        }
+                        changeFields();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+#map-trusting-websites {
+    height: 400px !important;
+    position: fixed !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 400px !important;
+    z-index: 999999 !important;
+    border: 1px solid black !important;
+}
+#links-trusting-websites {
+    height: 400px !important;
+    z-index: 999999 !important;
+    width: 200px !important;
+    position: fixed !important;
+    right: 400px !important;
+    bottom: 0 !important;
+    border: 1px solid white !important;
+    color: white !important;
+    background: black !important;
+}
