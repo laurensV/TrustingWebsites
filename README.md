@@ -43,7 +43,7 @@ Overview of the components of the server and chrome extension
 Download the server files from [server](server) and put them on your webserver.
 
 #### Chrome extension setup
-Download the extension files from [chromeextension](chromeextension).
+Download the extension files from [chrome-extension](chrome-extension).
 
 * Open Google Chrome browser and navigate to extra ¿ extension.
 * check the checkbox next to ”developer mode” and choose [Load extracted extension]
